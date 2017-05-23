@@ -30,16 +30,3 @@ pg.select().from('famous_people').asCallback( (err, rows) => {
   printAllPersons(rows);
   pg.destroy();
 });
-// client.connect((err) => {
-//   if (err) {
-//     return console.error("Connection Error", err);
-//   }
-//   client.query("SELECT * FROM famous_people WHERE first_name LIKE $1::text OR last_name LIKE $1::text", [input], (err, result) => {
-//     if (err) {
-//       return console.error("error running query", err);
-//     }
-//     printAllPersons(result.rows)
-
-//     client.end();
-//   });
-// });
