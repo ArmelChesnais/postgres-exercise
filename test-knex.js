@@ -26,7 +26,7 @@ function printAllPersons( rows ) {
   rows.forEach(printPerson);
 }
 
-pg.select().from('famous_people').asCallback( (err, rows) => {
+pg.select().from('famous_people').where("first_name", "like", input).orWhere("last_name", "like", input).asCallback( (err, rows) => {
   printAllPersons(rows);
   pg.destroy();
 });
