@@ -28,6 +28,7 @@ function printAllPersons( rows ) {
 
 pg.select().from('famous_people').asCallback( (err, rows) => {
   printAllPersons(rows);
+  pg.destroy();
 });
 // client.connect((err) => {
 //   if (err) {
