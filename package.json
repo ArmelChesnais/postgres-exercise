@@ -1,0 +1,23 @@
+{
+  "name": "pg-connect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pg": "^6.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArmelChesnais/postgres-exercise.git"
+  },
+  "author": "Armel Chesnais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArmelChesnais/postgres-exercise/issues"
+  },
+  "homepage": "https://github.com/ArmelChesnais/postgres-exercise#readme"
+}
